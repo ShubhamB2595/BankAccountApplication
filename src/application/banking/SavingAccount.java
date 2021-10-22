@@ -35,10 +35,6 @@ public class SavingAccount {
             annualInterestRate = newInterestRate;
     }
 
-	public static double getAnnualInterestRate() {
-		return annualInterestRate;
-	}
-
 	public static void setAnnualInterestRate(double annualInterestRate) {
 		SavingAccount.annualInterestRate = annualInterestRate;
 	}
@@ -47,10 +43,6 @@ public class SavingAccount {
 		return savingBalance;
 	}
 
-	public void setSavingBalance(double savingBalance) {
-		this.savingBalance = savingBalance;
-	}
-    
     
 
 }

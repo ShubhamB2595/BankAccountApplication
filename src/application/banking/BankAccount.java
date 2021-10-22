@@ -10,7 +10,7 @@ public class BankAccount {
         SavingAccount saver1, saver2;
         
         saver1 = new SavingAccount (2000.0);
-        saver2= new SavingAccount (3000.0);
+        saver2 = new SavingAccount (3000.0);
         
         // Set the annual interest rate to 4 % = 4/100 = 0.04
         SavingAccount.modifyInterestRate (0.04);
@@ -20,8 +20,19 @@ public class BankAccount {
         saver2.calculateMonthlyInterest();
 
         // Print new balances for both savers
-        System.out.println("This month Saver 1 balance is: "+ saver1.getSavingBalance());
-        System.out.println("This month Saver 2 balance is: "+ saver2.getSavingBalance());
+        System.out.println("Saver 1 balance with 4% interest rate is: " + saver1.getSavingBalance());
+        System.out.println("Saver 2 balance with 4% interest rate: " + saver2.getSavingBalance());
+
+        // Set the annual interest rate to 5 % = 5/100 = 0.05
+        SavingAccount.modifyInterestRate (0.05);
+        
+        // Calculate monthly interest 
+        saver1.calculateMonthlyInterest();
+        saver2.calculateMonthlyInterest();
+
+        // Print new balances for both savers
+        System.out.println("Saver 1 balance with 5% interest rate is: "+ saver1.getSavingBalance());
+        System.out.println("Saver 2 balance with 5% interest rate is: "+ saver2.getSavingBalance());
 
 	}
 
